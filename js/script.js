@@ -1,9 +1,29 @@
 "use strict";
 
-const category = 'toys';
+// Task1
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', "");
 
-console.log(`https://someurl.com/${category}/5`);
+// console.log(numberOfFilms);
 
-const user = 'Ivan';
+// Task2
 
-alert(`Привет, ${user}`);
+let personalMoviesDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+// Task3
+
+
+let a = prompt('Один из последних просмотренных фильмов?', ""),
+    b = prompt('На сколько его оцениваете?', ""),
+    c = prompt('Один из последних просмотренных фильмов?', ""),
+    d = prompt('На сколько его оцениваете?', "");
+
+personalMoviesDB.movies[a] = b;
+personalMoviesDB.movies[c] = d;
+
+console.log(personalMoviesDB);
